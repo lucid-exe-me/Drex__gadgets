@@ -4,9 +4,148 @@
  <meta charset="UTF-8">
     <meta name="viewport" content="width
     =device-width, initial-scale=1.0">
- <link rel="stylesheet" href="iphone.css">
+ <link rel="stylesheet" href="ipone.css">
  <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="font.css">
+ <style type="text/css">
+/* sidebar tweaks */
+
+.apple-logo {
+ width: 40px;
+}
+
+.sidebar-logo-images {
+ display: flex;
+ align-items: center;
+}
+
+.nav-name {
+ border-radius: 20px;
+ border: 2px solid black;
+ padding: 5px;
+ margin: 10px;
+ text-align: center;
+ white-space: nowrap;
+}
+
+.content {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+
+}
+
+.phones {
+ height: auto;
+ background: var(--white);
+ border-radius: 5px;
+ box-shadow: 0 0 5px lightgrey;
+ position: relative;
+ margin: 5px 5px;
+ text-align: center;
+}
+
+.product-image {
+ height: 250px;
+
+}
+
+.phones img {
+ width: 100%;
+ height: 100%;
+ border-radius: 5px 5px 0 0 ;
+
+}
+
+.prices {
+ padding: 5px 3px;
+}
+
+.phones span {
+ display: block;
+ font-weight: bold;
+ text-align: left;
+ padding: 5px;
+}
+
+.phones span:nth-child(1) {
+ font-weight: 300;
+}
+
+.phones .actions-iphone {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+
+}
+
+.actions-iphone a {
+ background: teal;
+ text-decoration: none;
+ color: #fff;
+ font-size: .8rem;
+ font-weight: 600;
+ border-radius: 5px;
+ box-shadow: 0 0 10px lightgrey;
+ margin: 8px;
+ padding: 10px;
+ width: 100%;
+ text-align: center;
+}
+
+/* nav-list */
+
+.navigators {
+ display: flex;
+ align-items: center;
+ overflow: scroll;
+ padding:  5px;
+}
+
+.nav-iphone {
+ position: sticky;
+ top: 60px;
+ background: white;
+ z-index: 1;
+}
+
+.navigators a {
+ flex-shrink: 0;
+ font-weight: 600;
+ font-family: Raleway;
+ text-decoration: none;
+ color: var(--black);
+ padding: 10px;
+ margin: 5px;
+ border-radius: 5px;
+ background: var(--white);
+ border: 1px solid black;
+ box-shadow: 0px 0px 3px var(--black);
+ cursor: none;
+}
+
+.navigators a:hover:active {
+ background: teal;
+}
+
+
+
+
+/* samsung ----------- codes */
+
+.samsung-logo {
+ width: 80px;
+ height: 80px;
+ margin-left: 100px;
+}
+
+@media screen and (min-width: 480px) {
+.content {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ background: var(--white);
+}
+
+} </style>
  </head>
 <body>
  <header>
